@@ -103,6 +103,7 @@ body{
     width: 12rem;
     height: 3rem;
     margin-top: 1rem;
+    cursor: pointer;
 }
 input[type=number]::-webkit-inner-spin-button{
     -webkit-appearance: none;
