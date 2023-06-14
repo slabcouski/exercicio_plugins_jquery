@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #E5E5E5;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -17,6 +20,7 @@
     background-image: url(../img/fundo.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    box-shadow: 0px 25px 50px -20px rgba(0,0,0,2);
 }
 .titulo{
     text-align: center;
@@ -37,11 +41,73 @@
     background-color: #570C69;
     border: 1px solid #570C69;
     border-radius: 0.5rem;
+    padding-left: 1rem;
+    color: #fff;
 }
 .formulario input::placeholder{
     color: #fff;
-    padding-left: 1rem;
+}
+.checkbox{
+    display: flex;
+    width: 80%;
+    margin-top: 1rem;
+}
+.containerCh{
+    width: 50%;
+    height: 20%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.containerCh h5{
+    margin: 0.3rem 0 0.3rem 2rem;
+    color: #fff;
+}
+.containerCh input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+.containerCh .checkmark {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #570C69;
+    border-radius: 2px;
+}
+.containerCh .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: .5rem;
+    top: .25rem;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.containerCh input:checked ~ .checkmark:after {
+    display: block;
 }
 .botao{
     color: #fff;
+    font-size: 2rem;
+    background-color: #2f023a;
+    border: 1px solid #2f023a;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+    appearance: textfield;
 }

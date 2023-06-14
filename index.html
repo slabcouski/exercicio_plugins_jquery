@@ -14,15 +14,28 @@
             <form action="" class="formulario">
                 <input type="text" placeholder="Nome Completo">
                 <input type="email" placeholder="Email">
-                <input type="tel" placeholder="Telefone">
-                <input type="number" placeholder="CPF">
+                <input type="tel" placeholder="Telefone" id="telefone">
+                <input type="number" placeholder="CPF" id="cpf">
                 <input type="text" placeholder="Endereço">
-                <input type="number" placeholder="CEP">
+                <input type="number" placeholder="CEP" id="cep">
+                <div class="checkbox">
+                    <label class="containerCh">
+                        <input type="checkbox" name="rememberMe" id="rememberMe">
+                        <span class="checkmark"></span>
+                        <h5>Lembrar</h5>
+                    </label>
+                    <label class="containerCh">
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                        <span class="checkmark"></span>
+                        <h5>Inscrever na Newsletter</h5>
+                    </label>
+                </div>
+                <button class="botao" type="button">Registrar</button>
             </form>
-            <button class="botao" type="button">Registrar</button>
         </div>
     </div>
-
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./assets/js/jquery.mask.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
